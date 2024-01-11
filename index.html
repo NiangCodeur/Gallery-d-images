@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galery d'images</title>
+</head>
+<body>
+    <div class="container">
+        <div class="small-img">
+            <img src="images/H1.png" class="mini-photo">
+            <img src="images/H2.png" class="mini-photo">
+            <img src="images/H3.png" class="mini-photo">
+            <img src="images/H4.png" class="mini-photo">
+            <img src="images/H5.png" class="mini-photo">
+        </div>
+
+        <div class="big-img">
+            <img src="images/H1.png" class="big-photo">
+        </div>
+    </div>
+    <script>
+        let mini_photo = document.getElementsByClassName('mini-photo')
+        let big_photo = document.querySelector('.big-photo')
+
+        mini_photo[0].onclick = function() {
+            big_photo.src = mini_photo[0].src
+        }
+        mini_photo[1].onclick = function() {
+            big_photo.src = mini_photo[1].src
+        }
+        mini_photo[2].onclick = function() {
+            big_photo.src = mini_photo[2].src
+        }
+        mini_photo[3].onclick = function() {
+            big_photo.src = mini_photo[3].src
+        }
+        mini_photo[4].onclick = function() {
+            big_photo.src = mini_photo[4].src
+        }
+    </script>
+</body>
+</html>
